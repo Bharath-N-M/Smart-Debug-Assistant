@@ -12,7 +12,6 @@ import SafeLogs from "./Components/SafeLogs";
 import ExplainErrors from "./Components/ExplainErrors";
 import GenerateSummary from "./Components/GenerateSummary";
 
-
 function App() {
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([]);
