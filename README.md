@@ -58,7 +58,6 @@ Error Explanation & Insights
     ↓
 Interactive Debugging
 
-
 to run client:: npm run dev
 to run server:: npm start;
 to run smart-debug-server:: 
