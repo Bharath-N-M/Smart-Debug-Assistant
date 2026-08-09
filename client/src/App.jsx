@@ -1,3 +1,5 @@
+
+
 import { useState, useRef, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
@@ -31,7 +33,7 @@ function App() {
     try {
       setLoadingMasking(true);
 
-      const res = await axios.post("http://localhost:5000/upload-log", formData, {
+      const res = await axios.post("http://localhost:8080/upload-log", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       console.log(res.data);
@@ -50,7 +52,7 @@ function App() {
     try {
       setLoadingAnalysis(true);
 
-      const res = await axios.post("http://localhost:5000/analyze-log", {
+      const res = await axios.post("http://localhost:8080/analyze-log", {
         maskedText,
       });
       console.log(res.data.analysis)
@@ -83,7 +85,7 @@ function App() {
     setInput("");
 
     try {
-      const res = await axios.post("http://localhost:5000/api/chat", { history });
+      const res = await axios.post("http://localhost:8080/api/chat", { history });
       const botMsg = { sender: "bot", text: res.data.reply };
       setMessages((prev) => [...prev, botMsg]);
     } catch (err) {

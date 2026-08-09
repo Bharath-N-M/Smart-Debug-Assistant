@@ -4,12 +4,9 @@
 .wrapper{
     width:100vw;
     height:100vh;
-
     display:flex;
     justify-content:center;
     align-items:center;
-
-    
     background: #2c3750;
 }
 
@@ -20,6 +17,7 @@
   width: 90%;
   height: 700px;
   background: white;
+  /* border:2px solid #ffffff; */
   border-radius: 12px;
   display: flex;
   flex-direction: column;
