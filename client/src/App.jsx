@@ -67,6 +67,7 @@ function App() {
     }
   };
 
+  
   const sendMessage = async () => {
     if (!input.trim()) return;
 
